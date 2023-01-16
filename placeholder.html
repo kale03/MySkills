@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeholder</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input, label {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 100%;
+            letter-spacing: -0.05em;
+            text-transform: lowercase;
+            color: blueviolet;
+        }
+        input{
+            width: 500px;
+            outline: none;
+            border: 2px solid blueviolet;
+            border-radius: 26px;
+            padding: 20px 30px;
+        }
+        label{
+            position: absolute;
+            transform: translateY(-50%);
+            transform-origin: left center;
+            top: 50%;
+            left: 40px;
+            pointer-events: none;
+            transition: .3s ease-in-out;
+            padding: 20px;
+            background-color: white;
+            opacity: .5;
+        }
+        .input-block{
+            position: relative;
+        }
+        input:focus + label, input:not(:placeholder-shown)+label{
+            top: 0;
+            transform: translateY(-50%) scale(.5) translateX(-20%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-block">
+        <input type="text" id="nick" placeholder=" ">
+        <label for="nick">Your nick</label>
+    </div>
+</body>
+</html>
