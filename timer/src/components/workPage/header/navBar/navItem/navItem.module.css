@@ -1,0 +1,22 @@
+.conteiner{
+    text-align: center;
+    height: auto;
+    width: auto;
+    font-family: 'title';
+    color: white;
+    margin-top: 75px;
+    margin-left: 5px;
+}
+.conteiner a{
+    text-decoration: none;
+    text-transform: none;
+    font-size: 35px;
+}
+
+@media(max-width:768px){
+    .conteiner{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+

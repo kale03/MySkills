@@ -1,0 +1,127 @@
+.conteiner{
+    height: 370px;
+    width: 80%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgba(25, 25, 25, 0.164);
+    margin-top: 170px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: 8% 40% 4% 40% 8%
+}
+.inputConteiner{
+    height: 100%;
+    grid-row: 2/3;
+}
+.inputBox {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    margin-left: 10%;
+    transform: skew(-20deg);
+    border-left: 2px solid rgb(66, 66, 66);
+    border-right: 2px solid rgb(66, 66, 66);
+    text-align: center;
+}
+.inputBox input {
+    position: relative;
+    padding: 20px 15px 10px ;
+    background: transparent;
+    border: 0;
+    height: 50%;
+    width: 80%;
+    outline: none;
+    font-style: normal;
+    font-family: 'title';
+    font-size: 35px;
+    color: #bb45ff;
+    transform: skew(20deg);
+}
+
+.inputBox span {
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    top: 70px;
+    left: 40px;
+    width: auto;
+    background-color: transparent;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+    padding: 20px;
+    color: white;
+    opacity: 0.7;
+    font-size: 25px;
+    font-family: 'title';
+}
+
+input:focus+span, input:not(:placeholder-shown)+span {
+    top: 0;
+    transform: translateY(-30%) scale(0.80) translateX(-20%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+input:focus {
+    transition: 0.5;
+    border-bottom: 2px solid #bb45ff;
+}
+.inputBox:focus + input:active{
+    transition: 0.5;
+    border-bottom: 2px solid #bb45ff;
+    border-bottom: 2px solid #bb45ff;
+}
+
+.inputBox:hover{
+    transition: 0.5s;
+    border-left: 2px solid rgb(212, 200, 200);
+    border-right: 2px solid rgb(212, 200, 200);
+}
+
+.inputBox:not(:hover) {
+    transition: 0.5s;
+    border-left: 2px solid rgb(66, 66, 66);
+    border-right: 2px solid rgb(66, 66, 66);
+}
+.buttonConteiner{
+    height: 100%;
+    margin-left: 10%;
+    width: 80%;
+    background-color: transparent;
+    grid-row: 4/5;
+    transform: skew(-20deg);
+}
+
+.buttonConteiner:hover{
+    transition: 0.5s;
+    border-left: 3px solid rgb(175, 184, 0);
+    border-right: 3px solid rgb(175, 184, 0);
+}
+
+.buttonConteiner:not(:hover) {
+    transition: 0.5s;
+    border-left: 3px solid rgb(66, 66, 66);
+    border-right: 3px solid rgb(66, 66, 66);
+}
+.button{
+    height: 100%;
+    width: 100%;
+    transform: skew(20deg);
+    background-color: transparent;
+    border: 0;
+    font-size: 47px;
+    color: gray;
+    font-family: 'title';
+}
+.button:hover{
+    transition: 0.5s;
+    color: rgb(175, 184, 0);
+}
+.button:not(:hover){
+    transition: .5s;
+    color: rgb(66, 66, 66);
+}
+
+
+

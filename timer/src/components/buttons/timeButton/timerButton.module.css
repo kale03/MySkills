@@ -1,0 +1,43 @@
+.buttonContainer {
+    height: 56px;
+    transform: skew(-20deg);
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.buttonContainer:hover{
+    transition: 0.5s;
+    border-left: 2px solid rgb(212, 200, 200);
+    border-right: 2px solid rgb(212, 200, 200);
+}
+
+.buttonContainer:not(:hover) {
+    transition: 0.5s;
+    border-left: 2px solid rgb(66, 66, 66);
+    border-right: 2px solid rgb(66, 66, 66);
+}
+
+.button {
+    font-size: 24px;
+    border: 0;
+    transform: skew(20deg);
+    height: 100%;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    letter-spacing: 0.1em;
+    font-family: 'title';
+}
+
+.button:hover{
+    transition: 0.5s;
+    color: #bb45ff;
+}
+
+.button:not(:hover){
+    transition: 0.5s;
+    color: transparent;
+}

@@ -1,0 +1,7 @@
+.conteiner{
+    height: 100%;
+    width: 100%;
+    grid-row: 3/6;
+    grid-column: 1/4;
+    background-color: #222222;
+}

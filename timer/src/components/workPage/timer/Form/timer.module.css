@@ -1,0 +1,141 @@
+.conteiner{
+    height: 520px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+    margin-right: 10%;
+    background-color: rgba(25, 25, 25, 0.164);
+    border: 1px solid #bb45ff;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 15% 65% 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.inputContainer{
+    height: auto;
+    border-bottom: 1px solid #bb45ff;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+}
+.timerConteiner{
+    text-align: center;
+    border-bottom: 1px solid #bb45ff;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-rows: 30% 30% 20% 10%;
+
+}
+
+.label{
+    grid-row: 2/3;
+    font-size: 60px;
+    color: white;
+    font-family: 'title';
+    /* padding-top: 110px ; */
+}
+.buttonConteiner{
+    grid-row: 3/4;
+}
+.playButton{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    margin: 7px;
+    background-image: url(../../../../img/buttons/play.png);
+    background-size: cover;
+    background-color: transparent;
+}
+.stopButton{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    margin: 7px;
+    background-image: url(../../../../img/buttons/stop-button.png);
+    background-size: cover;
+    background-color: transparent;
+}
+.cleanButton{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    margin: 7px;
+    background-image: url(../../../../img/buttons/clean.png);
+    background-size: cover;
+    background-color: transparent;
+}
+.reloadButton{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    margin: 7px;
+    background-image: url(../../../../img/buttons/icons8-поверните-против-часовой-стрелки-50.png);
+    background-size: cover;
+    background-color: transparent;
+}
+.add{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns:5% 90% 5% ;
+}
+.time{
+    grid-row: 2/3;
+    color: white;
+    display: grid;
+    grid-template-columns: 16% 20% 4% 20% 4% 20% 16%;
+}
+.hoursConteiner{
+    grid-column: 2/3;
+}
+.hours{
+    text-align: center;
+    font-family: 'timer';
+    font-size: 45px;
+    padding-top: 20px;
+    min-width: 102px;
+}
+.h{
+    margin-top: 0;
+    font-family: 'timer';
+    font-size: 19px;
+}
+.dot1{
+    grid-column: 3/4;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'title';
+}
+.dot2{
+    grid-column: 5/6;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'title';
+}
+.minuteConteiner{
+    grid-column: 4/5;
+}
+.minute{
+    text-align: center;
+    font-family: 'timer';
+    font-size: 45px;
+    padding-top: 20px;
+    min-width: 102px;
+}
+.secondConteiner{
+    grid-column: 6/7;
+}
+.second{
+    text-align: center;
+    font-family: 'timer';
+    font-size: 45px;
+    padding-top: 20px;
+    min-width: 102px;
+}
+
+
+

@@ -1,0 +1,58 @@
+.conteiner{
+    height: 100%;
+    width: 100%;
+    transform: skew(-20deg);
+    grid-column: 2/3;
+    z-index: 2;
+}
+.button{
+    height: 100%;
+    width: 100%;
+    transform: skew(20deg);
+    background-color: transparent;
+    border: 0;
+    font-size: 37px;
+    color: gray;
+    font-family: 'title';
+}
+.conteiner:hover{
+    transition: 0.5s;
+    border-left: 2px solid rgb(175, 184, 0);
+    border-right: 2px solid rgb(175, 184, 0);
+}
+
+.conteiner:not(:hover) {
+    transition: 0.5s;
+    border-left: 2px solid rgb(66, 66, 66);
+    border-right: 2px solid rgb(66, 66, 66);
+}
+
+.button:hover{
+    transition: 0.5s;
+    color: rgb(175, 184, 0);
+}
+.button:not(:hover){
+    transition: .5s;
+    color: rgb(66, 66, 66);
+}
+
+@media(max-width:320px){
+    .conteiner{
+        height: 100%;
+        width: 90%;
+        margin-left: 5%;
+        transform: skew(-20deg);
+        grid-column: 2/3;
+        z-index: 2;
+    }
+    .button{
+        height: 100%;
+        width: 100%;
+        transform: skew(20deg);
+        background-color: transparent;
+        border: 0;
+        font-size: 37px;
+        color: gray;
+        font-family: 'title';
+    }
+}

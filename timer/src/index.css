@@ -1,13 +1,34 @@
-body {
+body,html #root {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  
+}
+*{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "timer";
+  src: local(font1), url(./fonts/PressStart2P-Regular.ttf);;
+}
+
+@font-face {
+  font-family: "font3";
+  src:local(font3) url(./fonts/PressStart2P-Regular.ttf);
+}
+@font-face {
+  font-family: 'font1';
+  src: url(./fonts/future-forces-super.ttf);
+}
+@font-face {
+  font-family: 'title';
+  src: url(./fonts/Jura-VariableFont_wght.ttf);
 }

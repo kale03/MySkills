@@ -1,0 +1,38 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.181);
+    height: auto;
+    width: 96%;
+    margin: 2% 2% 2% 2%;
+    grid-column: 3/4;
+    border: 1px solid #bb45ff;
+}
+.title{
+    height: auto;
+    color: #bb45ff;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 4px;
+    text-align: center;
+    border-bottom: 1px solid #bb45ff;
+    font-size: 46px;
+    font-family: 'title';
+    text-transform: uppercase;
+    text-shadow:black 5px 6px 2px;
+}
+.addLink{
+    height: auto;
+    font-size: 45px;
+    color: rgb(0, 188, 0);
+    text-shadow: none;
+}
+
+@media(max-width:768px){
+    .container{
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 7px;
+    }
+}
