@@ -9,36 +9,37 @@
 }
 .title{
   grid-column: 1/2;
-  font-size: 22px;
-  width: auto;
+  font-size: 29px;
   color: white;
   font-family: 'timer';
   text-align: center;
   display: grid;
-  
+  grid-template-columns:10% 20% 20% 30% 20%;
 }
 .title h1{
   margin-top: 55px;
+  grid-column: 2/3;
 }
 
-
-@media(max-width:768px){
+.logo{
+  height: 100%;
+  width: 90%;
+  grid-column: 2/3;
+  background-image: url(../../../img/logo/icons8-будильник-включен-64.png);
+  background-size: cover;
+}
+ @media (max-width:1441px){
   .header{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
     height: auto;
   }
   .title{
-    font-size: 17px;
-    width: 100%;
-    height: auto;
+    font-size: 1em;
+    margin: 0 auto;
+    color: white;
+    font-family: 'timer';
+   
   }
-  .title h1{
-    margin-top: 20px;
-  }
-}
-
-
-
+ }

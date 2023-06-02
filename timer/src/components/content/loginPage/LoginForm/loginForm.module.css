@@ -199,3 +199,11 @@ a {
     letter-spacing: 0.1em;
     font-family: 'title';
 }
+
+@media(max-width:769px){
+    .conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

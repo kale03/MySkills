@@ -17,7 +17,7 @@
     grid-row: 1/2;
     grid-column: 1/4;
     display: flex;
-    justify-content: space-around;
+    padding: 10px;
 }
 .timerConteiner{
     text-align: center;
@@ -137,5 +137,277 @@
     min-width: 102px;
 }
 
+.buttonContainer {
+    height: 56px;
+    grid-column: 2/3;
+    transform: skew(-20deg);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.buttonContainer:hover{
+    transition: 0.5s;
+    border-left: 2px solid rgb(212, 200, 200);
+    border-right: 2px solid rgb(212, 200, 200);
+}
 
+.buttonContainer:not(:hover) {
+    transition: 0.5s;
+    border-left: 2px solid rgb(66, 66, 66);
+    border-right: 2px solid rgb(66, 66, 66);
+}
+
+.button {
+    font-size: 24px;
+    border: 0;
+    transform: skew(20deg);
+    height: 100%;
+    margin-left: 5px;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    letter-spacing: 0.1em;
+    font-family: 'title';
+}
+
+.button:hover{
+    transition: 0.5s;
+    color: #bb45ff;
+}
+
+.button:not(:hover){
+    transition: 0.5s;
+    color: transparent;
+}
+
+@media (max-width:680px){
+    .conteiner{
+        height: 520px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20%;
+        background-color: rgba(25, 25, 25, 0.164);
+        border: 1px solid #bb45ff;
+        display: grid;
+        grid-template-rows: 15% 65% 20%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .inputContainer{
+        height: 130px;
+        border-bottom: 1px solid #bb45ff;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .timerConteiner{
+        text-align: center;
+        border-bottom: 1px solid #bb45ff;
+        grid-row: 2/3;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-rows: 30% 30% 20% 10%;
+    
+    }
+    
+    .label{
+        grid-row: 2/3;
+        font-size: 6px;
+        color: white;
+        font-family: 'title';
+        /* padding-top: 110px ; */
+    }
+    .buttonConteiner{
+        grid-row: 3/4;
+    }
+    .playButton{
+        height: 45px;
+        width: 45px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/play.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .stopButton{
+        height: 45px;
+        width: 45px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/stop-button.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .cleanButton{
+        height: 45px;
+        width: 45px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/clean.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .reloadButton{
+        height: 45px;
+        width: 45px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/icons8-поверните-против-часовой-стрелки-50.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .add{
+        grid-row: 3/4;
+        grid-column: 1/4;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-columns:5% 90% 5% ;
+    }
+    .time{
+        grid-row: 2/3;
+        color: white;
+        display: grid;
+        grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+        grid-template-rows: 50% 50%;
+    }
+    .hoursConteiner{
+        grid-column: 2/3;
+    }
+    .hours{
+        text-align: center;
+        font-family: 'timer';
+        font-size: 40px;
+        padding-top: 20px;
+        min-width: 102px;
+    }
+    .h{
+        margin-top: 0;
+        font-family: 'timer';
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .dot1{
+        grid-column: 3/4;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'title';
+        grid-row: 1/2;
+        color: transparent;
+    }
+    .dot2{
+        grid-column: 5/6;
+        font-size: 40px;
+        top: 20px;
+        text-align: center;
+        font-family: 'title';
+        color: transparent;
+    }
+    .minuteConteiner{
+        grid-column: 4/5;
+    }
+    .minute{
+        text-align: center;
+        font-family: 'timer';
+        font-size: 40px;
+        padding-top: 20px;
+        min-width: 102px;
+    }
+    .secondConteiner{
+        grid-column: 6/7;
+    }
+    .second{
+        text-align: center;
+        font-family: 'timer';
+        font-size: 40px;
+        padding-top: 20px;
+        min-width: 102px;
+    }
+}
+@media (max-width:376px){
+    .hours{
+        margin-left: -6px;
+    }
+}
+@media (max-width:321px){
+    .time{
+        grid-row: 2/3;
+        color: white;
+        display: grid;
+        grid-template-columns: 5% 20% 5% 20% 5% 20% 5%;
+        grid-template-rows: 50% 50%;
+    }
+    
+    .playButton{
+        height: 40px;
+        width: 40px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/play.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .stopButton{
+        height: 40px;
+        width: 40px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/stop-button.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .cleanButton{
+        height: 40px;
+        width: 40px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/clean.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .reloadButton{
+        height: 40px;
+        width: 40px;
+        border: 0;
+        margin: 7px;
+        background-image: url(../../../../img/buttons/icons8-поверните-против-часовой-стрелки-50.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    .hours{
+        text-align: center;
+        font-family: 'timer';
+        font-size: 30px;
+        padding-top: 20px;
+        min-width: 60px;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        margin-left: 20px;
+    }
+    .h{
+        margin-top: 0;
+        font-family: 'timer';
+        font-size: 15px;
+        margin-left: -10px;
+        margin: 25px;
+    }
+    .minute{
+        text-align: center;
+        font-family: 'timer';
+        font-size: 30px;
+        padding-top: 20px;
+        min-width: 60px;
+        margin-left: 18px;
+    }
+    .second{
+        text-align: center;
+        font-family: 'timer';
+        font-size: 30px;
+        padding-top: 20px;
+        min-width: 60px;
+        margin-left: 10px;
+    }
+}

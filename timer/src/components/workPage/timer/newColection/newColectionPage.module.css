@@ -18,7 +18,7 @@
     width: 80%;
     height: 100%;
     display: grid;
-    margin-left: 10%;
+    margin: 0 auto;
     transform: skew(-20deg);
     border-left: 2px solid rgb(66, 66, 66);
     border-right: 2px solid rgb(66, 66, 66);
@@ -53,7 +53,6 @@
     color: white;
     opacity: 0.7;
     font-size: 25px;
-    font-family: 'title';
 }
 
 input:focus+span, input:not(:placeholder-shown)+span {
@@ -86,7 +85,7 @@ input:focus {
 }
 .buttonConteiner{
     height: 100%;
-    margin-left: 10%;
+    margin:0 auto;
     width: 80%;
     background-color: transparent;
     grid-row: 4/5;
@@ -124,4 +123,9 @@ input:focus {
 }
 
 
-
+@media(max-width:1441px){
+    .conteiner{
+        width: 100%;
+        margin-left: 0;
+    }
+}

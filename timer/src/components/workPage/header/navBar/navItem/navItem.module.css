@@ -13,10 +13,41 @@
     font-size: 35px;
 }
 
-@media(max-width:768px){
+@media ( max-width:425px){
     .conteiner{
-        margin-top: 10px;
         text-align: center;
+        height: auto;
+        width: auto;
+        font-family: 'title';
+        color: white;
+        margin-top: 5px;
+        
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .conteiner a{
+        text-decoration: none;
+        text-transform: none;
+        font-size: 25px;
+        margin-left: 55px;
     }
 }
-
+@media ( max-width:320px){
+    .conteiner{
+        text-align: center;
+        height: auto;
+        width: auto;
+        font-family: 'title';
+        color: white;
+        margin-top: 5px;
+        
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .conteiner a{
+        text-decoration: none;
+        text-transform: none;
+        font-size: 23px;
+        margin-left: 55px;
+    }
+}

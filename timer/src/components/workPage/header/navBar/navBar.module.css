@@ -6,13 +6,3 @@
     display: grid;
     grid-template-columns: 50% 50%;
 }
-
-@media(max-width:768px){
-    .conteiner{
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-left: 37%;
-    }
-  }

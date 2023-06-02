@@ -5,11 +5,11 @@
     display: grid;
     grid-template-columns: 30% 40% 30%;
   }
-
-  @media(max-width:1439px){
+  @media(max-width:1441px){
     .conteiner{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
+      width: 100%;
     }
   }

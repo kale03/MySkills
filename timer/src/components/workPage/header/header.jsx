@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className={header.header}>
             <div className={header.title}>
-                <h1>OnlineTimer</h1>
+                <h1>UTimer</h1>
             </div>
             <NavBar></NavBar>
         </div>
